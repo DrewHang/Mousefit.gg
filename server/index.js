@@ -13,7 +13,7 @@ server.use(express.json());
 server.use(express.static(path.join(__dirname, "../build")));
 server.use("/api", router);
 
-const PORT = process.env.SERVER_PORT;
+const PORT = process.env.PORT;
 
 server.listen(PORT, () => {
   console.log(`Server is listening on http://localhost:${PORT}`);
