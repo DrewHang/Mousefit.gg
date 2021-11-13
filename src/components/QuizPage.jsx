@@ -90,7 +90,7 @@ export default function QuizPage() {
       body: JSON.stringify({ url: finalMouse.finalmouse.amazonLink }),
     };
 
-    fetch("http://localhost:1337/api/getScrapeData", requestOptions)
+    fetch("/api/getScrapeData", requestOptions)
       .then((response) => response.json())
       .then((data) =>
         dispatch(setScrapedData({ data: data, isLoading: false }))
@@ -104,7 +104,7 @@ export default function QuizPage() {
       body: JSON.stringify({ mouse: finalMouse.finalmouse.productName }),
     };
 
-    fetch("http://localhost:1337/api/getLink", requestOptions)
+    fetch("/api/getLink", requestOptions)
       .then((response) => response.json())
       .then((data) =>
         dispatch(setScrapedYoutube({ data: data, isLoading: false }))
@@ -112,7 +112,7 @@ export default function QuizPage() {
   };
 
   const getMouseList = () => {
-    fetch("http://localhost:1337/api/getAll")
+    fetch("/api/getAll")
       .then((res) => res.json())
       .then(
         (result) => {
