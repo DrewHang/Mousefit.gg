@@ -13,8 +13,8 @@ server.use(express.json());
 server.use(express.static(path.join(__dirname, "../build")));
 server.use("/api", router);
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
 server.listen(PORT, () => {
-  console.log(`Server is listening on http://localhost:${PORT}`);
+  console.log(`Server is listening on http://0.0.0.0:${PORT}`);
 });
