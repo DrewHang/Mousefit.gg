@@ -1,6 +1,6 @@
 # Mousefit.gg
 
-<iframe src="https://giphy.com/embed/p8xcyEQ4T15JbEGd4m" width="480" height="256" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/p8xcyEQ4T15JbEGd4m">via GIPHY</a></p>
+![mousefit](https://user-images.githubusercontent.com/82345254/141868900-5af820a0-da7e-4ad4-8310-c070c039cbd4.gif)
 
 # Inspiration
 
