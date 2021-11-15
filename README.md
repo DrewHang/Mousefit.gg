@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Mousefit.gg
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+mousefitgg.herokuapp.com
 
-## Available Scripts
+# Inspiration
 
-In the project directory, you can run:
+Unlike clothing and shoes, mouses are difficult to “try” on and test. There aren’t many physical stores to buy mouses from and most purchases are usually online. The problem with this is that people often have to purchase a mouse one at a time, and if they don’t like it they have to return it within a number of days. The only way to minimize this problem is to do a deep dive into the mouse the user is looking at.
 
-### `yarn start`
+Mousefit.gg was made to help users narrow down the mouse of their choice and forces users to think of important questions that may often be overlooked such as weight, grip, size, price, and more. We do this with the hope that when a user chooses their mouse for the first time, they will be more informed and choose their desired mouse on the first try.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# What it does
+Mousefit.gg is a quiz that helps users with their gaming mouse purchasing decisions. Based on user inputs, it filters a database and recommends a mouse according to the answers imputed in the mouse quiz.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# How we built it
 
-### `yarn test`
+We first started with a comprehensive google sheet which had hundreds of gaming mouse data. From there, we cleaned the data and imported the data into our MongoDB. We used the data in MongoDB to make a quiz which filtered out the database every time the user chooses an answer until ultimately there was one mouse remaining. We then transfer this mouse data to the result page where it’s traits are listed and a youtube review video of the mouse is displayed.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Challenges we ran into
+We didn’t have time to make our data more comprehensive. We wanted to, but it was out of scope to scrape each large mouse brand’s website for their mouses and then add this data into our database. The animated star background caused some issues with layout and spacing issues. The 3d model rotating mouse lagged our page alot (turn hardware acceleration on in google so the mouse model isn’t laggy) Not able to deploy the scraped data on Heroku due to scraping taking longer than 30s. So results page wont load
 
-### `yarn build`
+# Accomplishments that we're proud of
+We managed to keep the app to a single page and just have it conditionally render. Able to plan, finish and deploy our project all within 5 days. Our entire team learned how to code only 5 month ago and were able to make this so we’re surprised at ourselves!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# What we learned
+We familiarized ourself more with MaterialUI and learned/incorporated Redux within a week. Scraping with puppeteer is really useful and helped give our product one more important feature
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# What's next for MouseFit.gg
+We want to funnel this quiz into a mouse rental business eventually where people can rent and try used mouses in bulk. Kind of like Stitch Fix but for gaming mice.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Built With
 
-### `yarn eject`
+  <img src="https://img.shields.io/badge/ThreeJs-black?style=for-the-badge&logo=three.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />
+  <img src="https://img.shields.io/badge/Puppeteer-40B5A4?style=for-the-badge&logo=Puppeteer&logoColor=white" />
+  <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
+  <img src="https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white" />
+  
+  
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
