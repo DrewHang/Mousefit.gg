@@ -1,6 +1,6 @@
 # Mousefit.gg
 
-<a>mousefitgg.herokuapp.com</a>
+<iframe src="https://giphy.com/embed/p8xcyEQ4T15JbEGd4m" width="480" height="256" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/p8xcyEQ4T15JbEGd4m">via GIPHY</a></p>
 
 # Inspiration
 
@@ -26,6 +26,10 @@ We familiarized ourself more with MaterialUI and learned/incorporated Redux with
 
 # What's next for MouseFit.gg
 We want to funnel this quiz into a mouse rental business eventually where people can rent and try used mouses in bulk. Kind of like Stitch Fix but for gaming mice.
+
+# Try it out!
+
+<a href="mousefitgg.herokuapp.com">mousefitgg.herokuapp.com</a>
 
 # Built With
 
